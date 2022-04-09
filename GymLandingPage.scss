@@ -1,0 +1,78 @@
+.navbar{
+    background-image: linear-gradient(to top, #2dd4bf, #0f766e);
+
+    ul{
+        li:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}
+
+.mainpage{
+    background-image: url('/My Practice/CSS/LandingPage/Images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.maincontentdata{
+    clip-path: polygon(0 0, 80% 0, 65% 100%, 0 100%);
+    background-color: whitesmoke;
+    z-index: 0;
+}
+
+
+.imagecenter{
+    transform: translateY(-400px);
+}
+
+.slidingimages{
+    margin: auto;
+    width: 500px;
+    height: 375px;
+    overflow: hidden;
+    // border: 2px solid red;
+
+    .slidingimageswrapper{
+        animation: slide 40s ease-in-out infinite alternate;
+        animation-delay: 5s;
+    }
+}
+
+
+@keyframes slide{
+    10%{transform: translateX(-500px);}
+    20%{transform: translateX(-1000px);}
+    30%{transform: translateX(-1500px);}
+    40%{transform: translateX(-2000px);}
+    50%{transform: translateX(-2500px);}
+    60%{transform: translateX(-2000px);}
+    70%{transform: translateX(-1500px);}
+    80%{transform: translateX(-1000px);}
+    90%{transform: translateX(-500px);}   
+}
+
+
+@mixin arrows{
+    font-size: 75px;
+    color: black;
+    position: relative;
+    top: 125px;
+    height: 80px; 
+    cursor: pointer;
+
+    i:hover{
+        color: teal;
+    }
+}
+
+.leftarrow{
+    @include arrows;
+    left: 320px;
+     
+}
+
+.rightarrow{
+    @include arrows;
+    left: -320px;
+}

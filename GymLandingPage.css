@@ -1,0 +1,148 @@
+.navbar {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2dd4bf), to(#0f766e));
+  background-image: linear-gradient(to top, #2dd4bf, #0f766e);
+}
+
+.navbar ul li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.mainpage {
+  background-image: url("/My Practice/CSS/LandingPage/Images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maincontentdata {
+  -webkit-clip-path: polygon(0 0, 80% 0, 65% 100%, 0 100%);
+          clip-path: polygon(0 0, 80% 0, 65% 100%, 0 100%);
+  background-color: whitesmoke;
+  z-index: 0;
+}
+
+.imagecenter {
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+.slidingimages {
+  margin: auto;
+  width: 500px;
+  height: 375px;
+  overflow: hidden;
+}
+
+.slidingimages .slidingimageswrapper {
+  -webkit-animation: slide 40s ease-in-out infinite alternate;
+          animation: slide 40s ease-in-out infinite alternate;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes slide {
+  10% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  20% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  30% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  40% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  50% {
+    -webkit-transform: translateX(-2500px);
+            transform: translateX(-2500px);
+  }
+  60% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  70% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  80% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  90% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@keyframes slide {
+  10% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  20% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  30% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  40% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  50% {
+    -webkit-transform: translateX(-2500px);
+            transform: translateX(-2500px);
+  }
+  60% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  70% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  80% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  90% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+.leftarrow {
+  font-size: 75px;
+  color: black;
+  position: relative;
+  top: 125px;
+  height: 80px;
+  cursor: pointer;
+  left: 320px;
+}
+
+.leftarrow i:hover {
+  color: teal;
+}
+
+.rightarrow {
+  font-size: 75px;
+  color: black;
+  position: relative;
+  top: 125px;
+  height: 80px;
+  cursor: pointer;
+  left: -320px;
+}
+
+.rightarrow i:hover {
+  color: teal;
+}
+/*# sourceMappingURL=GymLandingPage.css.map */

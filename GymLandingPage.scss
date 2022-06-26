@@ -1,78 +1,230 @@
-.navbar{
-    background-image: linear-gradient(to top, #2dd4bf, #0f766e);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-    ul{
-        li:hover{
-            transform: scale(1.1,1.1);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lobster,'Courier New', Courier, monospace;
+}
+
+
+html{
+    // font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+
+.background{
+    background : rgba(0,0,0,0.6) url("/Images/3.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    height: 12vh;
+    // border: 2px solid black;
+
+    .navlogo img{
+        margin: 30px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        // border: 2px solid black;
+    }
+
+    .navitem{
+        font-size: 22px;
+        padding: 20px 30px;
+        cursor: pointer;
+        // border: 2px solid red;
+
+        &:hover a{
+            color: black;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
         }
     }
 }
 
-.mainpage{
-    background-image: url('/My Practice/CSS/LandingPage/Images/3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-
-.maincontentdata{
-    clip-path: polygon(0 0, 80% 0, 65% 100%, 0 100%);
-    background-color: whitesmoke;
-    z-index: 0;
-}
-
-
-.imagecenter{
-    transform: translateY(-400px);
-}
-
-.slidingimages{
+.home .content{
+    color: white;
+    font-size: 20px;
+    letter-spacing:1.5px;
+    width: 85%;
+    min-height: 60vh;
     margin: auto;
-    width: 500px;
-    height: 375px;
-    overflow: hidden;
-    // border: 2px solid red;
-
-    .slidingimageswrapper{
-        animation: slide 40s ease-in-out infinite alternate;
-        animation-delay: 5s;
+    // border: 2px solid black;
+    
+    h2{
+        font-size: 50px;
+        letter-spacing: 2px;
+        margin: 185px 0px 20px 0px;
+        padding: 5px 15px;
+        // border: 2px solid black;
     }
+
+    p{
+        margin: 20px 0px;
+        padding: 5px 15px;
+        // border: 2px solid black;
+    }
+
+    
 }
 
-
-@keyframes slide{
-    10%{transform: translateX(-500px);}
-    20%{transform: translateX(-1000px);}
-    30%{transform: translateX(-1500px);}
-    40%{transform: translateX(-2000px);}
-    50%{transform: translateX(-2500px);}
-    60%{transform: translateX(-2000px);}
-    70%{transform: translateX(-1500px);}
-    80%{transform: translateX(-1000px);}
-    90%{transform: translateX(-500px);}   
-}
-
-
-@mixin arrows{
-    font-size: 75px;
-    color: black;
-    position: relative;
-    top: 125px;
-    height: 80px; 
+.joinus{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 15%;
     cursor: pointer;
+    padding: 5px 15px;
+    margin: auto 15px;
+    text-align: center;
+    
 
-    i:hover{
-        color: teal;
+    &:hover{
+        color: black;
+        border: 2px solid black;
     }
 }
 
-.leftarrow{
-    @include arrows;
-    left: 320px;
-     
+
+
+
+// The side fixed bar which is for the social media icons
+.socialmedia{
+    background: none;
+    max-width: 5%;
+    position: fixed;
+    left: -35px;
+    top: 35%;
+    transition: transform 1s linear;
+    z-index: 1;
+
+    ul{
+        list-style: none;
+        text-align: center;
+
+        li{
+            padding: 10px 5px;
+            background-color: whitesmoke;
+            font-size: 20px;
+            cursor: pointer;
+            position: relative;
+
+
+            &:first-child:hover{
+                color: #00acee;
+            }
+            &:nth-child(2):hover{
+                color: #3b5998;
+            }
+            &:nth-child(3):hover{
+                color: #E60023;
+            }
+            &:nth-child(4):hover{
+                color: #00acee;
+            }
+            &:nth-child(5):hover{
+                color: red;
+            }
+            &:last-child{
+                background: none;
+                padding: 0;
+                height: 0;
+                width: 0;
+                border-left: 15px solid whitesmoke;
+                border-bottom: 15px solid transparent;
+                border-top: 15px solid transparent;
+                
+                position: absolute;
+                left: 100%;
+                top: 45%;
+            }
+        }
+    }
+
+    &:hover{
+        transform: translateX(100%);
+    }
+
 }
 
-.rightarrow{
-    @include arrows;
-    left: -320px;
+
+
+
+
+// Gym tour ssection
+.gymtour{
+    height: 100vh;
+
+//  For the text "Start Gym Tour"
+    .startgymtour{
+        text-align: center;
+        padding: 25px;
+        font-size: 45px;
+        // border: 2px solid black;
+    }
+
+//  For the 
+    .gt-quote{
+        text-align: center;
+        font-size: 25px;
+        // border: 2px solid black;
+
+    }
+// For the three images aligned 2 in bottom and one on top
+    div.tripleimages{
+        width: 100%;
+        margin: 60px 0;
+        display: inline-block;
+        position: relative;
+        min-height: 300px;
+        // border: 2px solid black;
+
+        img{
+            width: 35%;
+            height: 100%;
+        }
+        .img1{
+            position: absolute;
+            left: 10%;
+        }
+        
+        .img2{
+            position: absolute;
+            left: 32.5%;
+            top: 10%;
+            z-index: 1;
+        }
+        
+        .img3{
+            position: absolute;
+            right: 10%;  
+        }
+    }
+
+    .enrollnow{
+        width: 30%;
+        margin: auto;
+        font-size: 20px;
+        border: 2px solid black;
+
+        &:hover{
+            background: black;
+            color: white;
+        }
+    }
 }

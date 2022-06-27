@@ -468,8 +468,53 @@ body {
 }
 
 .contactus {
-  height: 20vh;
+  height: 50vh;
   border: 2px solid black;
   margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactus .timings {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 150px;
+}
+
+.contactus .timings h2, .contactus .timings p {
+  width: 80%;
+  text-align: left;
+  margin: 10px auto;
+  font-size: 30px;
+}
+
+.contactus .timings p {
+  font-size: 18px;
+}
+
+.contactus .address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.contactus .address .add1, .contactus .address .add2 {
+  margin: 10px 0px;
 }
 /*# sourceMappingURL=GymLandingPage.css.map */

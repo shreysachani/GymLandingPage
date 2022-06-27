@@ -540,7 +540,44 @@ body{
 
 
 .contactus{
-    height: 20vh;
+    height: 50vh;
     border: 2px solid black;
     margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .timings{
+        flex: 1;
+        height: 150px;
+        // border: 2px solid red;
+
+        h2,p{
+            width: 80%;
+            text-align: left;
+            margin: 10px auto;
+            font-size: 30px;
+            // border: 2px solid green;
+            
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
+
+
+    .address{
+        flex:1;
+        display: flex;
+        height: 150px;
+        justify-content: space-evenly;
+        font-size: 18px;
+        // border: 2px solid green;
+
+        .add1,.add2{
+            margin: 10px 0px;
+        }
+    }
 }

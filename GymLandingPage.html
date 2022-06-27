@@ -8,18 +8,26 @@
     <title>Health & Fitness Gym</title>
     <link rel="stylesheet" href="GymLandingPage.css">
     <script src="https://kit.fontawesome.com/4bbfb295ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
     <div class="background">
-        <div class="navbar">
-            <div class="navlogo"><img src="/Images/logo.png" alt=""></div>
-            <div class="navitem"><a href="#home">Home</a></div>
-            <div class="navitem"><a href="gymtour">Gym Tour</a></div>
-            <div class="navitem"><a href="personaltraining">Personal Training</a></div>
-            <div class="navitem"><a href="pricing">Pricing</a></div>
-            <div class="navitem"><a href="Contact">Contact</a></div>
+        <div class="navbar" id="navbar">
+            <div class="leftnav">
+                <div class="navlogo"><img src="/Images/logo.png" alt=""></div>
+            </div>
+            <div class="rightnav">
+                <div class="navitem"><a href="#navbar">Home</a></div>
+                <div class="navitem"><a href="#gymtour">Gym Tour</a></div>
+                <div class="navitem"><a href="#personaltraining">Personal Training</a></div>
+                <div class="navitem"><a href="#pricing">Pricing & Plans</a></div>
+                <div class="navitem"><a href="Contact">Contact Us</a></div>
+            </div>
         </div>
 
         <div class="home">
@@ -44,7 +52,7 @@
 
 
 
-    <div class="gymtour">
+    <div class="gymtour" id="gymtour">
         <h2 class="startgymtour">Start Gym Tour</h2>
         <div class="gt-quote">Providing One of the Best Facilities and Equipments</div>
         <div class="tripleimages">
@@ -55,6 +63,153 @@
         <div class="joinus enrollnow">
             Enroll Now & get Huge Discounts
         </div>
+    </div>
+
+
+    <!-- 
+    <div class="tv">
+        <div class="slidingimages">
+            <img src="/Images/gtour5.jpg" alt="">
+            <img src="/Images/gtour4.jpg" alt="">
+            <img src="/Images/gtour3.jpg" alt="">
+            <img src="/Images/gtour2.jpg" alt="">
+            <img src="/Images/gtour1.jpg" alt="">
+        </div>
+    </div> 
+-->
+    <h1 class="headofpt" id="personaltraining">Personal Trainers</h1>
+    <div class="personaltrainers">
+        <div class="trainer">
+            <div class="trainerimage">
+                <img src="/Images/pt4.jpg" alt="">
+            </div>
+            <div class="trainerdescription">
+                <h3>Aaron Williamson</h3>
+                <p class="exp">10+ years of Experience</p>
+                <p class="desc">Aaron Williamson became The Rock’s personal trainer in 2013. If that doesn't qualify him
+                    to be one of the most famous personal trainers, then we don't know what does!
+
+                    If you are an avid follower of social media, then you’ve more than likely come across any number of
+                    meme comparisons, showing how The Rock looked before and after he was trained by Aaron Williamson.
+                    .</p>
+                <div class="contacttrainer">Contact Aaron <span><i class="fa fa-arrow-right rightarrow"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <div class="trainerimage">
+                <img src="/Images/pt1.jpg" alt="">
+            </div>
+            <div class="trainerdescription">
+                <h3>Jeanette Jenkins</h3>
+                <p class="exp">7 years of Experience</p>
+                <p class="desc">Jeanette Jenkins boasts an unreal client list. She doesn’t only work with NFL and NBA
+                    stars, but also with professional gymnasts and a host of celebrities.
+
+                    In the past, she has worked with big names including P!nk, Alicia Keys, Tia Mowry, Amber Rose,
+                    Tracee Ellis Ross, Nia Long, and Shonda Rhimes.</p>
+                <div class="contacttrainer"><span><i class="fa fa-arrow-left leftarrow"></i>Contact Jean</div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <div class="trainerimage">
+                <img src="/Images/pt6.jpg" alt="">
+            </div>
+            <div class="trainerdescription">
+                <h3>Tracy Anderson </h3>
+                <p class="exp">5 years of Experience</p>
+                <p class="desc">Tracy Anderson Method', Anderson is one of the best celebrity personal trainers in terms
+                    of having a well-rounded career.
+
+                    She has trained the likes of Victoria Beckham, Robert Downey Jr, Jennifer Lopez, Nicole Richie, and
+                    many more!</p>
+                <div class="contacttrainer">Contact Tracy<span><i class="fa fa-arrow-right rightarrow"></i></div>
+            </div>
+        </div>
+
+        <div class="trainer">
+            <div class="trainerimage">
+                <img src="/Images/pt2.jpg" alt="">
+            </div>
+            <div class="trainerdescription">
+                <h3>Shaun Stafford </h3>
+                <p class="exp">6+ years of Experience</p>
+                <p class="desc">He's the director of City Athletic, a performance training gym based in London, a 2x
+                    WBFF World Fitness Champion, and is incredibly popular on social media platforms, listing him as one
+                    of the most famous personal trainers in the UK. </p>
+                <div class="contacttrainer"><span><i class="fa fa-arrow-left leftarrow"></i>Contact Shaun</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing" id="pricing">
+        <div class="ourplans">Our Plans</div>
+        <div class="plancontainer">
+            <div class="plan">
+                <div class="planlogo"><img src="/Images/1.jpg" alt=""></div>
+                <div class="plandetails">
+                    <h2>Popular</h2>
+                    <hr>
+                    <p class="price">Price : <span>1500</span> INR / Month</p>
+                    <p class="price">Price : <span>18,000</span> INR / Yearly</p>
+                    <hr>
+                    <ul class="accessible">
+                        <li class="items"><i class="fa fa-check allowed"></i>Only the Gym Area</li>
+                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Personal Trainer</li>
+                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
+                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Discount</li>
+                    </ul>
+                    <div class="buyplan">Join Now</div>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="planlogo"><img src="/Images/1.jpg" alt=""></div>
+                <div class="plandetails">
+                    <h2>Exclusive</h2>
+                    <hr>
+                    <p class="price">Price : <span>3000</span> INR / Month</p>
+                    <p class="price">Price : <span>30,000</span> INR / Yearly</p>
+                    <hr>
+                    <ul class="accessible">
+                        <li class="items"><i class="fa fa-check allowed"></i>Only the Gym Area </li>
+                        <li class="items"><i class="fa fa-check allowed"></i>Personal Trainer</li>
+                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
+                        <li class="items"><i class="fa fa-check allowed"></i>Discount</li>
+                    </ul>
+                    <div class="buyplan">Join Now <div class="discount"> -17%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="planlogo"><img src="/Images/1.jpg" alt=""></div>
+                <div class="plandetails">
+                    <h2>Premium</h2>
+                    <hr>
+                    <p class="price">Price : <span>5000</span> INR / Month</p>
+                    <p class="price">Price : <span>50,000</span> INR / Yearly</p>
+                    <hr>
+                    <ul class="accessible">
+                        <li class="items"><i class="fa fa-check allowed"></i>Access Any Gym Area</li>
+                        <li class="items"><i class="fa fa-check allowed"></i>Personal Trainer</li>
+                        <li class="items"><i class="fa fa-check allowed"></i>Unlimited Visits</li>
+                        <li class="items"><i class="fa fa-check allowed"></i>Discount</li>
+                    </ul>
+                    <div class="buyplan">Join Now <div class="discount"> -17%</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="plan"></div> -->
+            <!-- <div class="plan"></div> -->
+        </div>
+    </div>
+
+
+    <div class="contactus">
+
     </div>
 
 </body>

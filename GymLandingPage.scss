@@ -16,48 +16,56 @@ body{
     width: 100%;
 }
 
-
+// For the background of the home landing page
 .background{
     background : rgba(0,0,0,0.6) url("/Images/3.jpg");
     background-size: cover;
     background-blend-mode: darken;
 }
 
-
+// For the navigation bar
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style-type: none;
     height: 12vh;
     // border: 2px solid black;
 
-    .navlogo img{
-        margin: 30px;
-        height: 70px;
-        border-radius: 50%;
-        cursor: pointer;
+//  For the logo purpose
+    .leftnav{   
         // border: 2px solid black;
+        .navlogo img{
+            margin: 15px 30px 0px;
+            height: 80px;
+            border-radius: 50%;
+            cursor: pointer;
+            // border: 2px solid black;
+        }
     }
 
-    .navitem{
-        font-size: 22px;
-        padding: 20px 30px;
-        cursor: pointer;
-        // border: 2px solid red;
+//  For the rigthnavbar purpose i.e home,contact etc
+    .rightnav{
+        display: flex;
+        .navitem{
+            font-size: 22px;
+            padding: 20px 30px;
+            cursor: pointer;
+            // border: 2px solid red;
 
-        &:hover a{
-            color: black;
-        }
+            &:hover a{
+                color: black;
+            }
 
-        a{
-            text-decoration: none;
-            color: white;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }
 
-
+// for the content that is name of the gym and the quote written below it
 .home .content{
     color: white;
     font-size: 20px;
@@ -69,7 +77,7 @@ body{
     
     h2{
         font-size: 50px;
-        letter-spacing: 2px;
+        letter-spacing: 2.5px;
         margin: 185px 0px 20px 0px;
         padding: 5px 15px;
         // border: 2px solid black;
@@ -84,6 +92,7 @@ body{
     
 }
 
+// For join us button
 .joinus{
     border: 2px solid white;
     border-radius: 20px;
@@ -166,9 +175,9 @@ body{
 
 
 
-// Gym tour ssection
+// Gym tour section
 .gymtour{
-    height: 100vh;
+    min-height: 110vh;
 
 //  For the text "Start Gym Tour"
     .startgymtour{
@@ -178,7 +187,7 @@ body{
         // border: 2px solid black;
     }
 
-//  For the 
+//  For the quote "Providing One of the Best Facilities and Equipments"
     .gt-quote{
         text-align: center;
         font-size: 25px;
@@ -216,15 +225,322 @@ body{
         }
     }
 
+// For enroll now button
     .enrollnow{
         width: 30%;
         margin: auto;
         font-size: 20px;
-        border: 2px solid black;
+        background: black;
+        color: white;
+        border: 4px solid black;
 
         &:hover{
-            background: black;
-            color: white;
+            background: white;
+            color: black;
+            border: 2px solid black;
         }
     }
+}
+
+
+
+
+// .tv{
+//     margin: auto;
+//     width: 50%;
+//     min-height: 30%;
+//     border-radius: 30px;
+//     border: 20px solid grey;
+// }
+
+// .slidingimages{
+//     width: 100%;
+//     // min-height: 300px;
+//     max-height: 75vh;
+//     // display: flex;
+//     overflow: hidden;
+//     border-radius: 20px;
+//     // border: 2px solid black;
+
+//     img{
+//         // margin: 0px 15%;
+//         width: 100%;
+//     }
+// }
+
+.headofpt{
+    background-color: black;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px 0px;
+    // border: 2px solid blue;
+}
+
+.personaltrainers{
+    background-color: black;
+    padding: 10px 10px;
+    // border: 2px solid red;
+}
+
+.trainer{
+    display: flex;
+    // align-items: center;
+    width: 80%;
+    min-height: 215px;
+    margin: 50px auto;
+    border-bottom : 1px solid white;
+    // border: 2px solid black;
+
+
+    .trainerimage{
+        // max-height: 80% ;
+        // flex: 1;
+        width: 20%;
+        margin: 0px 0px 20px 40px;
+        // border: 2px solid red;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+
+    .trainerdescription{
+        height: 100%;
+        flex: 4;
+        padding: 0px 100px;
+        color: white;
+        // font-size: 17px ;
+        // border: 2px solid blue;
+
+        h3{
+            margin: 10px 0px;
+        }
+
+        .exp{
+            margin: 10px 0px;
+        }
+
+        .desc{
+            text-align: justify;
+        }
+
+        .contacttrainer{
+            width: 25%;
+            margin: 10px auto 0px;
+            padding: 3px 0px;
+            text-align: center;
+            border-radius: 20px;
+            color: black;
+            cursor: pointer;
+            background-color: white;
+            border: 2px solid white;
+
+            .rightarrow{
+                font-size: 18px;
+                margin: 2px auto auto 6px;
+                display: none;
+            }
+
+            .leftarrow{
+                font-size: 18px;
+                margin: 2px 8px auto auto;
+                display: none;
+            }
+
+            &:hover{
+                background-color: black;
+                color: white;
+                // transition: all 1.2s linear;
+
+                .rightarrow,.leftarrow{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+
+
+    
+    &:nth-child(even){
+        flex-direction: row-reverse;
+
+        .trainerimage{
+            margin: 0px 40px 20px 0px;
+        }
+
+        .trainerdescription h3,.trainerdescription .exp{
+            text-align: right;
+        }
+    }
+}
+
+
+
+
+
+
+
+.pricing{
+    width: 100%;
+    height: 120vh;
+
+    .ourplans{
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+        // border: 2px solid red;
+        margin-top: 70px;
+    }
+
+    .plancontainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        .plan{
+            min-height: 80vh;
+            width: 25%;
+            margin-top: 100px;
+            border-radius: 20px ;
+            position: relative;
+            padding: 80px 30px 0;
+            box-shadow: 4px 4px 8px grey, -4px -4px 8px grey;
+            // border: 1px solid black;
+
+
+            .planlogo{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                left: 35%;
+                top: -10%;
+                // border: 2px solid black;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+
+            .plandetails{
+                // border: 2px solid green;
+                margin-bottom: 40px;
+
+                h2{
+                    width: 60%;
+                    margin: auto;
+                    // background: grey;
+                    color: black;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 35px;
+                    // border: 2px solid black;
+                }
+
+                hr{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .price{
+                    color: grey;
+                    padding: 5px 0px;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    // border: 2px solid black;
+
+                    span{
+                        font-size: 25px;
+                        color: black;
+                    }
+                }
+
+
+                ul{
+                    list-style-type: none;
+
+                    li{
+                        font-size: 20px;
+                        margin: 20px 0px;
+                        // border: 2px solid black;
+
+                        i{
+                            font-size: 17px;
+                            color: white;
+                            border-radius: 50% ;
+                            margin-right: 20px;
+                        }
+
+                        .allowed{
+                            background: lightgreen;
+                            padding: 5px;
+                        }
+                        .not-allowed{
+                            background: rgb(228, 98, 98);
+                            padding: 5px 7px;
+                        }
+                    }
+                }
+
+
+                .buyplan{
+                    border: 2px solid black;
+                    text-align: center;
+                    font-size: 20px;
+                    width: 50%;
+                    margin: 40px auto 0px;
+                    border-radius: 20px;
+                    padding: 5px;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:hover{
+                        background: black;
+                        color: white;
+
+                        .discount{
+                            color: black;
+                            background: rgb(44, 182, 44);
+                        }
+                    }
+
+
+                    .discount{
+                        text-align: center;
+                        position: absolute;
+                        height: 50px;
+                        width: 50px;
+                        background: lightgreen;
+                        padding: 12px 0px;
+                        border-radius: 50%;
+                        right: -20%;
+                        top: -90%;
+                        transform: rotateZ(-30deg);
+                    }
+                }
+
+
+
+                
+            }
+        }
+    }
+}
+
+
+
+
+.contactus{
+    height: 20vh;
+    border: 2px solid black;
+    margin-top: 70px;
 }

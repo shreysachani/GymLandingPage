@@ -29,31 +29,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style-type: none;
   height: 12vh;
 }
 
-.navbar .navlogo img {
-  margin: 30px;
-  height: 70px;
+.navbar .leftnav .navlogo img {
+  margin: 15px 30px 0px;
+  height: 80px;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.navbar .navitem {
+.navbar .rightnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .rightnav .navitem {
   font-size: 22px;
   padding: 20px 30px;
   cursor: pointer;
 }
 
-.navbar .navitem:hover a {
+.navbar .rightnav .navitem:hover a {
   color: black;
 }
 
-.navbar .navitem a {
+.navbar .rightnav .navitem a {
   text-decoration: none;
   color: white;
 }
@@ -69,7 +75,7 @@ body {
 
 .home .content h2 {
   font-size: 50px;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   margin: 185px 0px 20px 0px;
   padding: 5px 15px;
 }
@@ -159,7 +165,7 @@ body {
 }
 
 .gymtour {
-  height: 100vh;
+  min-height: 110vh;
 }
 
 .gymtour .startgymtour {
@@ -207,11 +213,263 @@ body {
   width: 30%;
   margin: auto;
   font-size: 20px;
-  border: 2px solid black;
+  background: black;
+  color: white;
+  border: 4px solid black;
 }
 
 .gymtour .enrollnow:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.headofpt {
+  background-color: black;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.personaltrainers {
+  background-color: black;
+  padding: 10px 10px;
+}
+
+.trainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 215px;
+  margin: 50px auto;
+  border-bottom: 1px solid white;
+}
+
+.trainer .trainerimage {
+  width: 20%;
+  margin: 0px 0px 20px 40px;
+}
+
+.trainer .trainerimage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.trainer .trainerdescription {
+  height: 100%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 0px 100px;
+  color: white;
+}
+
+.trainer .trainerdescription h3 {
+  margin: 10px 0px;
+}
+
+.trainer .trainerdescription .exp {
+  margin: 10px 0px;
+}
+
+.trainer .trainerdescription .desc {
+  text-align: justify;
+}
+
+.trainer .trainerdescription .contacttrainer {
+  width: 25%;
+  margin: 10px auto 0px;
+  padding: 3px 0px;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.trainer .trainerdescription .contacttrainer .rightarrow {
+  font-size: 18px;
+  margin: 2px auto auto 6px;
+  display: none;
+}
+
+.trainer .trainerdescription .contacttrainer .leftarrow {
+  font-size: 18px;
+  margin: 2px 8px auto auto;
+  display: none;
+}
+
+.trainer .trainerdescription .contacttrainer:hover {
+  background-color: black;
+  color: white;
+}
+
+.trainer .trainerdescription .contacttrainer:hover .rightarrow, .trainer .trainerdescription .contacttrainer:hover .leftarrow {
+  display: inline-block;
+}
+
+.trainer:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.trainer:nth-child(even) .trainerimage {
+  margin: 0px 40px 20px 0px;
+}
+
+.trainer:nth-child(even) .trainerdescription h3, .trainer:nth-child(even) .trainerdescription .exp {
+  text-align: right;
+}
+
+.pricing {
+  width: 100%;
+  height: 120vh;
+}
+
+.pricing .ourplans {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 70px;
+}
+
+.pricing .plancontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.pricing .plancontainer .plan {
+  min-height: 80vh;
+  width: 25%;
+  margin-top: 100px;
+  border-radius: 20px;
+  position: relative;
+  padding: 80px 30px 0;
+  -webkit-box-shadow: 4px 4px 8px grey, -4px -4px 8px grey;
+          box-shadow: 4px 4px 8px grey, -4px -4px 8px grey;
+}
+
+.pricing .plancontainer .plan .planlogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  top: -10%;
+}
+
+.pricing .plancontainer .plan .planlogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.pricing .plancontainer .plan .plandetails {
+  margin-bottom: 40px;
+}
+
+.pricing .plancontainer .plan .plandetails h2 {
+  width: 60%;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.pricing .plancontainer .plan .plandetails hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pricing .plancontainer .plan .plandetails .price {
+  color: grey;
+  padding: 5px 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.pricing .plancontainer .plan .plandetails .price span {
+  font-size: 25px;
+  color: black;
+}
+
+.pricing .plancontainer .plan .plandetails ul {
+  list-style-type: none;
+}
+
+.pricing .plancontainer .plan .plandetails ul li {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.pricing .plancontainer .plan .plandetails ul li i {
+  font-size: 17px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.pricing .plancontainer .plan .plandetails ul li .allowed {
+  background: lightgreen;
+  padding: 5px;
+}
+
+.pricing .plancontainer .plan .plandetails ul li .not-allowed {
+  background: #e46262;
+  padding: 5px 7px;
+}
+
+.pricing .plancontainer .plan .plandetails .buyplan {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 40px auto 0px;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.pricing .plancontainer .plan .plandetails .buyplan:hover {
   background: black;
   color: white;
+}
+
+.pricing .plancontainer .plan .plandetails .buyplan:hover .discount {
+  color: black;
+  background: #2cb62c;
+}
+
+.pricing .plancontainer .plan .plandetails .buyplan .discount {
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: lightgreen;
+  padding: 12px 0px;
+  border-radius: 50%;
+  right: -20%;
+  top: -90%;
+  -webkit-transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+}
+
+.contactus {
+  height: 20vh;
+  border: 2px solid black;
+  margin-top: 70px;
 }
 /*# sourceMappingURL=GymLandingPage.css.map */

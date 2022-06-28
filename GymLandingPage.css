@@ -224,6 +224,113 @@ body {
   border: 2px solid black;
 }
 
+.slidingimages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
+  width: 50%;
+  height: 450px;
+  margin: auto;
+}
+
+.slidingimages .images {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  height: 100%;
+  border: 2px solid red;
+  -webkit-animation: slide 40s linear infinite alternate;
+          animation: slide 40s linear infinite alternate;
+}
+
+.slidingimages .images img {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes slide {
+  20% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  30% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  40% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  50% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  60% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  70% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  80% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  90% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(-500%);
+            transform: translateX(-500%);
+  }
+}
+
+@keyframes slide {
+  20% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  30% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  40% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  50% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  60% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  70% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  80% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  90% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(-500%);
+            transform: translateX(-500%);
+  }
+}
+
 .headofpt {
   background-color: black;
   color: white;
@@ -469,7 +576,6 @@ body {
 
 .contactus {
   height: 50vh;
-  border: 2px solid black;
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +586,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  background: black;
 }
 
 .contactus .timings {
@@ -507,7 +615,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 150px;
+  height: 200px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -516,5 +624,13 @@ body {
 
 .contactus .address .add1, .contactus .address .add2 {
   margin: 10px 0px;
+}
+
+.contactus .address .add1 h3, .contactus .address .add2 h3 {
+  font-size: 30px;
+}
+
+.contactus .address .add1 p, .contactus .address .add2 p {
+  margin: 10px auto;
 }
 /*# sourceMappingURL=GymLandingPage.css.map */

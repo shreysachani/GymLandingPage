@@ -67,7 +67,7 @@ body {
 
 .home .content {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   letter-spacing: .15rem;
   width: 85%;
   min-height: 60vh;
@@ -212,13 +212,13 @@ body {
   font-size: 2rem;
   background: black;
   color: white;
-  border: 4px solid black;
+  border: 0.4rem solid black;
 }
 
 .gymtour .enrollnow:hover {
   background: white;
   color: black;
-  border: 2px solid black;
+  border: .2rem solid black;
 }
 
 .featuring {
@@ -525,7 +525,7 @@ body {
 
 .trainer .trainerdescription .contacttrainer {
   width: 25%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: .3rem 0;
   text-align: center;
   border-radius: 2rem;
@@ -725,6 +725,7 @@ body {
           align-items: center;
   color: white;
   background: black;
+  border: 2px solid black;
 }
 
 .contactus .timings {
@@ -732,6 +733,8 @@ body {
       -ms-flex: 1;
           flex: 1;
   height: 15rem;
+  border: 2px solid red;
+  min-height: 60%;
 }
 
 .contactus .timings h2, .contactus .timings p {
@@ -739,6 +742,7 @@ body {
   text-align: left;
   margin: 1rem auto;
   font-size: 3rem;
+  border: 2px solid green;
 }
 
 .contactus .timings p {
@@ -757,6 +761,8 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 1.8rem;
+  min-height: 60%;
+  border: 2px solid green;
 }
 
 .contactus .address .add1, .contactus .address .add2 {
@@ -781,6 +787,9 @@ body {
   html {
     font-size: 59%;
   }
+  .joinus {
+    width: 16%;
+  }
   .trainer {
     width: 85%;
   }
@@ -789,6 +798,9 @@ body {
   }
   .gymtour div.tripleimages .img1 {
     left: 7.5%;
+  }
+  .gymtour div.tripleimages .img2 {
+    left: 30%;
   }
   .gymtour div.tripleimages .img3 {
     right: 7.5%;
@@ -811,6 +823,9 @@ body {
   html {
     font-size: 57%;
   }
+  .joinus {
+    width: 18%;
+  }
   .trainer {
     width: 90%;
   }
@@ -822,6 +837,9 @@ body {
   }
   .gymtour div.tripleimages .img3 {
     right: 5%;
+  }
+  .gymtour .enrollnow {
+    width: 32%;
   }
   .arrows .slidingimages {
     width: 60%;
@@ -841,8 +859,72 @@ body {
   html {
     font-size: 56%;
   }
+  .gymtour .enrollnow {
+    width: 34%;
+  }
+  .joinus {
+    width: 20%;
+  }
   .trainer {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar .rightnav .navitem {
+    padding: 2rem;
+  }
+  .home .content {
+    width: 87.5%;
+  }
+  .gymtour .enrollnow {
+    width: 37%;
+  }
+  .trainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trainer .trainerimage {
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+  }
+  .trainer .trainerdescription h3, .trainer .trainerdescription .exp {
+    text-align: center;
+  }
+  .trainer .trainerdescription .contacttrainer {
+    margin: 2rem auto 4rem;
+  }
+  .trainer:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trainer:nth-child(even) .trainerimage {
+    margin: auto;
+  }
+  .trainer:nth-child(even) .trainerdescription h3, .trainer:nth-child(even) .trainerdescription .exp {
+    text-align: center;
+  }
+  .pricing .plancontainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pricing .plancontainer .plan {
+    width: 34%;
+  }
+  .pricing .plancontainer .plan .plandetails ul li .allowed {
+    padding: 1.1rem;
+  }
+  .pricing .plancontainer .plan .plandetails ul li .not-allowed {
+    padding: 1.1rem 1.1rem;
   }
 }
 /*# sourceMappingURL=GymLandingPage.css.map */

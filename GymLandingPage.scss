@@ -11,6 +11,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     width: 100%;
@@ -48,7 +49,7 @@ body{
     .rightnav{
         display: flex;
         .navitem{
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             padding: 2rem 3rem;
             cursor: pointer;
             // border: 2px solid red;
@@ -376,7 +377,8 @@ body{
 
 
     .trainerimage{
-        width: 20%;
+        width: 22rem;
+        height: 22rem;
         margin: 0 0 2rem 4rem;
         // border: 2px solid blue;
         // max-height: 80% ;
@@ -401,10 +403,12 @@ body{
 
         h3{
             margin: 1rem 0; 
+            // border: 2px solid green;
         }
 
         .exp{
             margin: 1rem 0;
+            // border: 2px solid green;
         }
 
         .desc{
@@ -634,7 +638,7 @@ body{
     .timings{
         flex: 1;
         height: 15rem;
-        border: 2px solid red;
+        // border: 2px solid red;
         min-height: 60%;
 
         h2,p{
@@ -642,7 +646,7 @@ body{
             text-align: left;
             margin: 1rem auto;
             font-size: 3rem;
-            border: 2px solid green;
+            // border: 2px solid green;
             
         }
 
@@ -659,7 +663,7 @@ body{
         justify-content: space-evenly;
         font-size: 1.8rem;
         min-height: 60%;
-        border: 2px solid green;
+        // border: 2px solid green;
 
         .add1,.add2{
             margin: 1rem 0;
@@ -683,6 +687,12 @@ body{
 
 @media screen and (max-width: 1300px) {
     html{font-size: 61%;}
+
+    .trainer{
+        .trainerdescription{
+            padding: 0 9rem;
+        }
+    }
 }
 
 
@@ -695,6 +705,12 @@ body{
         .img1{left: 7.5%;}
         .img2{left: 30%;}
         .img3{right: 7.5%;}
+    }
+
+    .trainer{
+        .trainerdescription{
+            padding: 0 8rem;
+        }
     }
     .arrows{
         .slidingimages{width: 55%;}
@@ -736,9 +752,15 @@ body{
 
 @media screen and (max-width: 1000px) {
     html{font-size: 56%;}
+    .navbar .rightnav .navitem {padding: 2.2rem;}
     .gymtour .enrollnow{width:34%}
     .joinus{width: 20%}
-    .trainer{width: 95%;}
+    .trainer{
+        width: 95%;
+        .trainerdescription{
+            padding: 0 6.5rem;
+        }
+    }
     
 }
 
@@ -761,6 +783,7 @@ body{
         }
 
         .trainerdescription{
+            padding: 0 5rem;
             h3,.exp{         
                 text-align: center;
             }
@@ -786,7 +809,7 @@ body{
             flex-wrap: wrap;
 
             .plan{
-                width: 34%;
+                width: 36%;
 
                 .plandetails ul li{
 
@@ -794,7 +817,7 @@ body{
                                 padding: 1.1rem;
                             }
                             .not-allowed{
-                                padding: 1.1rem 1.1rem;
+                                padding: 1.1rem 1.3rem;
                             }
                         }
         }
@@ -802,3 +825,7 @@ body{
 }
 
     
+@media screen and (max-width: 768px) {
+    html{font-size: 50%;}
+    .pricing .plancontainer .plan{width: 38%;}
+}

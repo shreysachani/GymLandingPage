@@ -50,15 +50,9 @@ body {
   text-decoration: none;
   color: white;
 }
-.navbar .rightnav .navitem:last-child {
-  display: none;
-}
-.navbar .rightnav .navitem .burgermenu {
+.navbar .rightnav .navitem .cancelbtn {
   color: white;
   font-size: 3rem;
-  position: fixed;
-  top: 2rem;
-  right: 4rem;
 }
 
 .home .content {
@@ -143,6 +137,20 @@ body {
 }
 .socialmedia:hover {
   transform: translateX(100%);
+}
+
+.burgermenu {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+#icon {
+  display: none;
 }
 
 .gymtour .startgymtour {
@@ -824,33 +832,41 @@ body {
   .home .content h2 {
     margin: 11.5rem 0 2rem 0;
   }
-  .sm_navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
   .sm_rightnav {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    align-self: center;
+    align-items: center;
+    position: absolute;
+    top: -45rem;
+    height: 45rem;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    transition: top 0.5s;
   }
-  .navbar .rightnav .navitem:last-child {
+  .sm_rightnav #icon {
+    order: 1;
+    align-self: flex-end;
     display: block;
   }
-  .opacity {
-    opacity: 0;
+  .sm_rightnav #home {
+    order: 2;
   }
-  .collapse {
-    height: 10rem;
-    position: absolute;
-    width: 100%;
-    transition: height 1s linear;
+  .sm_rightnav #gymtour {
+    order: 3;
   }
-  .expand {
-    height: 32rem;
-    width: 100%;
-    transition: height 1s linear;
-    position: absolute;
+  .sm_rightnav #pt {
+    order: 4;
+  }
+  .sm_rightnav #price {
+    order: 5;
+  }
+  .sm_rightnav #contact {
+    order: 6;
+  }
+  .burgermenu {
+    display: block;
   }
   .gymtour div.tripleimages {
     min-height: 25rem;

@@ -17,16 +17,17 @@
 <body>
 
     <div class="background">
-        <div class="navbar" id="navbar">
-            <div class="leftnav">
+        <div class="navbar sm_navbar" id="navbar">
+            <div class="leftnav sm_leftnav">
                 <div class="navlogo"><img src="/Images/logo.png" alt=""></div>
             </div>
-            <div class="rightnav">
-                <div class="navitem"><a href="#navbar">Home</a></div>
-                <div class="navitem"><a href="#gymtour">Gym Tour</a></div>
-                <div class="navitem"><a href="#personaltraining">Personal Training</a></div>
-                <div class="navitem"><a href="#pricing">Pricing & Plans</a></div>
-                <div class="navitem"><a href="#contact">Contact Us</a></div>
+            <div class="rightnav sm_rightnav collapse">
+                <div class="navitem opacity"><a href="#navbar">Home</a></div>
+                <div class="navitem opacity"><a href="#gymtour">Gym Tour</a></div>
+                <div class="navitem opacity"><a href="#personaltraining">Personal Training</a></div>
+                <div class="navitem opacity"><a href="#pricing">Pricing & Plans</a></div>
+                <div class="navitem opacity"><a href="#contact">Contact Us</a></div>
+                <div class="navitem"><i class="fa fa-bars burgermenu"></i></div>
             </div>
         </div>
 
@@ -170,6 +171,8 @@
                 <div class="contacttrainer"><span><i class="fa fa-arrow-left leftarrow"></i>Contact Shaun</div>
             </div>
         </div>
+
+        <div class="viewall"><a href="pt.html">View All</a></div>
     </div>
 
     <div class="pricing" id="pricing">
@@ -183,13 +186,15 @@
                     <p class="price">Price : <span>1500</span> INR / Month</p>
                     <p class="price">Price : <span>18,000</span> INR / Yearly</p>
                     <hr>
+
                     <ul class="accessible">
-                        <li class="items"><i class="fa fa-check allowed"></i>Only the Gym Area</li>
-                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Personal Trainer</li>
-                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
-                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Discount</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Only the Gym Area</li>
+                        <li class="items displaynone"><i class="fa fa-xmark not-allowed"></i>Personal Trainer</li>
+                        <li class="items displaynone"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
+                        <li class="items displaynone"><i class="fa fa-xmark not-allowed"></i>Discount</li>
                     </ul>
-                    <div class="buyplan">Join Now</div>
+                    <div class="buyplan">View Details</div>
+                    <div class="buyplan">Join Now </div>
                 </div>
             </div>
 
@@ -202,12 +207,13 @@
                     <p class="price">Price : <span>30,000</span> INR / Yearly</p>
                     <hr>
                     <ul class="accessible">
-                        <li class="items"><i class="fa fa-check allowed"></i>Only the Gym Area </li>
-                        <li class="items"><i class="fa fa-check allowed"></i>Personal Trainer</li>
-                        <li class="items"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
-                        <li class="items"><i class="fa fa-check allowed"></i>Discount</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Only the Gym Area </li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Personal Trainer</li>
+                        <li class="items displaynone"><i class="fa fa-xmark not-allowed"></i>Unlimited Visits</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Discount</li>
                     </ul>
-                    <div class="buyplan">Join Now <div class="discount"> -17%</div>
+                    <div class="buyplan">View Details</div>
+                    <div class="buyplan"> Join Now <div class="discount"> -17%</div>
                     </div>
                 </div>
             </div>
@@ -221,16 +227,17 @@
                     <p class="price">Price : <span>50,000</span> INR / Yearly</p>
                     <hr>
                     <ul class="accessible">
-                        <li class="items"><i class="fa fa-check allowed"></i>Access Any Gym Area</li>
-                        <li class="items"><i class="fa fa-check allowed"></i>Personal Trainer</li>
-                        <li class="items"><i class="fa fa-check allowed"></i>Unlimited Visits</li>
-                        <li class="items"><i class="fa fa-check allowed"></i>Discount</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Access Any Gym Area</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Personal Trainer</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Unlimited Visits</li>
+                        <li class="items displaynone"><i class="fa fa-check allowed"></i>Discount</li>
                     </ul>
+                    <div class="buyplan">View Details</div>
                     <div class="buyplan">Join Now <div class="discount"> -17%</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
     </div>
 
 
@@ -262,5 +269,6 @@
     </div>
 
 </body>
+<script src="/GymLandingPage.js"></script>
 
 </html>

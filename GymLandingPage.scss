@@ -62,9 +62,24 @@ body{
                 text-decoration: none;
                 color: white;
             }
+
+            &:last-child{
+                display: none;
+            }
+
+            .burgermenu{
+                color: white;
+                font-size: 3rem;
+                position: fixed;
+                top: 2rem;
+                right: 4rem;
+                // border: 2px solid red;
+            }
+            
         }
     }
 }
+
 
 // for the content that is name of the gym and the quote written below it
 .home .content{
@@ -75,6 +90,7 @@ body{
     min-height: 60vh;
     margin: auto;
     // border: 2px solid black;
+    // transition: min-height 1s linear;
     
     h2{
         font-size: 5rem;
@@ -364,6 +380,22 @@ body{
     background-color: black;
     padding: 1rem 1rem;
     // border: 2px solid red;
+
+
+    .viewall{
+        margin: 1rem auto;
+        text-align: center;
+        width: 15%;
+        font-size: 2rem;
+        line-height: 3.25rem;
+        background-color: white;
+        border-radius: 2rem;
+        cursor: pointer;
+
+        a{
+            color: black;
+        }
+    }
 }
 
 .trainer{
@@ -490,7 +522,7 @@ body{
         justify-content: space-evenly;
 
         .plan{
-            min-height: 80vh;
+            min-height: 40rem;
             width: 25%;
             margin-top: 10rem;
             border-radius: 2rem ;
@@ -588,10 +620,14 @@ body{
                     padding: .5rem;
                     cursor: pointer;
                     position: relative;
+                    
+
+                    &:nth-of-type(1){display: none;}
 
                     &:hover{
                         background: black;
                         color: white;
+                        
 
                         .discount{
                             color: black;
@@ -613,10 +649,6 @@ body{
                         transform: rotateZ(-30deg);
                     }
                 }
-
-
-
-                
             }
         }
     }
@@ -626,17 +658,18 @@ body{
 
 
 .contactus{
-    height: 50vh;
+    height: 30rem;
     margin-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
     color: white;
     background: black;
     border: 2px solid black;
 
     .timings{
-        flex: 1;
+        flex: 3;
         height: 15rem;
         // border: 2px solid red;
         min-height: 60%;
@@ -657,7 +690,7 @@ body{
 
 
     .address{
-        flex:1;
+        flex:4;
         display: flex;
         height: 20rem;
         justify-content: space-evenly;
@@ -680,9 +713,26 @@ body{
 
 
 
+@media screen and (min-width: 1440px){
+    html{font-size: 120%;}
+
+    .trainer{
+        .trainerdescription{
+            padding: 0 9rem;
+        }
+    }
+}
 
 
+@media screen and (min-width: 1440px) and (max-width:2559px) {
+    html{font-size: 70%;}
 
+    .trainer{
+        .trainerdescription{
+            padding: 0 9rem;
+        }
+    }
+}
 
 
 @media screen and (max-width: 1300px) {
@@ -768,9 +818,10 @@ body{
 @media screen and (max-width: 910px) {
     html{font-size: 55%;}
     .navbar .rightnav .navitem {padding: 2rem;}
-    .home .content{
-        width: 87.5%;
-    }
+    .home .content{width: 87.5%;}
+
+    .gymtour div.tripleimages{min-height: 27.5rem;}
+    .arrows .slidingimages{height: 40rem;}
     .gymtour .enrollnow{width:37%}
     .trainer{
         width: 100%;
@@ -807,12 +858,9 @@ body{
     
     .pricing .plancontainer{
             flex-wrap: wrap;
-
             .plan{
                 width: 36%;
-
                 .plandetails ul li{
-
                             .allowed{
                                 padding: 1.1rem;
                             }
@@ -824,8 +872,148 @@ body{
     }
 }
 
+
+@media screen and (max-width: 830px) {
+    // html{font-size: 30%;}
+
+    .home .content{
+        min-height: 40vh;padding-bottom: 14rem;
+        h2{
+            margin: 11.5rem 0 2rem 0;
+        }
+    }
+
+    .sm_navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        // border: 3px solid red;
+    }
+    .sm_rightnav{
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+        // border: 3px solid red; 
+    }
+
+
+    .navbar {
+        .rightnav .navitem {
+            &:last-child{display: block;}
+        }
+    }  
     
-@media screen and (max-width: 768px) {
-    html{font-size: 50%;}
+    .opacity{opacity: 0;}
+
+
+    .collapse{
+        height: 10rem;
+        position: absolute;
+        width: 100%;
+        transition: height 1s linear;
+        // border: 2px solid red;
+        // opacity: 0;
+        
+    }
+    
+    .expand{
+        height: 32rem;
+        width: 100%;
+        // border: 3px solid green;
+        transition: height 1s linear;
+        position: absolute;
+    }
+
+    // .home .content_resp{min-height: 80vh;}
+    
+    .gymtour div.tripleimages{min-height: 25rem;}
+    .arrows .slidingimages{height: 35rem;}
+        
+    
+    .displaynone{display: none;}
+
+    .pricing .plancontainer .plan .plandetails .buyplan{
+        &:nth-of-type(1){display: block;} 
+    }
+
     .pricing .plancontainer .plan{width: 38%;}
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    html{font-size: 52%;}
+    .home .content{
+        min-height:30vh;
+        padding-bottom: 12rem;
+        // border: 2px solid black ;
+        h2{
+            margin: 10.5rem 0 2rem 0;
+        }
+    }
+    
+    .gymtour {
+        .enrollnow{width: 40%;}
+        div.tripleimages{min-height: 22.5rem;}
+    }
+    .arrows{
+        .slidingimages{width: 65%;}
+        i.left{left: 12.5%;}
+        i.right{right: 12.5%;}
+    }
+
+}
+
+
+@media screen and (max-width: 610px) {
+    html{font-size: 48%;}
+    .trainer{width: 100%;}
+    .pricing{  
+        .plancontainer .plan{
+                width: 36%;
+            }
+    }
+    .arrows{
+        .slidingimages{width: 70%;}
+        i.left{left: 7.5%;}
+        i.right{right: 7.5%;}
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html{font-size: 33%;}
+    // .trainer{width: 100%;}
+    // .pricing{  
+    //     .plancontainer .plan{
+    //             width: 36%;
+    //         }
+    // }
+    .pricing .plancontainer .plan{width: 40%;}
+    .contactus{
+        .timings{flex: 2.5;}
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html{font-size: 30%;}
+    .gymtour{
+        div.tripleimages,.enrollnow{display: none;}
+    }
+    .personaltrainers{ 
+        .trainer:nth-child(3),.trainer:nth-child(4){
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    html{font-size: 28%;}
+
+    .pricing .plancontainer .plan{width: 51%;}
+    .contactus{
+        .timings{flex: 1.5;}
+        .address{flex: 2;}
+    }
 }

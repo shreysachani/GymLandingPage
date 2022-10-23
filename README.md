@@ -1,3 +1,3 @@
 # GymLandingPage
-Creating a  GYM Landing Page
+Created a  GYM Landing Page<br>
 Check out the website at : https://gymlandingpage-shreysachani.netlify.app
